@@ -1,0 +1,763 @@
+{
+    "1": {
+        "question": "바구니에 사과가 8개 있습니다. 정국이가 바구니에 사과 7개를 더 넣었습니다. 바구니 안에 있는 사과는 모두 몇 개입니까?",
+        "equation_op": "8 7 [OP_ADD]",
+        "qtype": "산술연산",
+        "checked": false,
+        "INC": {
+            "[N0]": "8",
+            "[N1]": "7"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "사과",
+            "[S1]": "정국"
+        },
+        "IMQ": "바구니에 [S0] 사과가 [N0] 8개 있습니다. [S1] 정국이가 바구니에 [S0] 사과 [N1] 7개를 더 넣었습니다. 바구니 안에 있는 [S0] 사과는 모두 몇 개입니까?",
+        "NET": "[N0] [N1] [OP]",
+        "template": "[N0] [N1] [OP_ADD]"
+    },
+    "2": {
+        "question": "유정이는 가지고 있던 사탕 중에서 언니에게 7개를 주고 동생에게 6개를 주었더니 15개가 남았습니다. 처음에 유정이가 가지고 있던 사탕은 몇 개입니까?",
+        "equation_op": "15 7 [OP_ADD] 6 [OP_ADD]",
+        "qtype": "산술연산",
+        "checked": false,
+        "INC": {
+            "[N0]": "7",
+            "[N1]": "6",
+            "[N2]": "15"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "유정",
+            "[S1]": "사탕",
+            "[S2]": "언니",
+            "[S3]": "동생"
+        },
+        "IMQ": "[S0] 유정이는 가지고 있던 [S1] 사탕 중에서 [S2] 언니에게 [N0] 7개를 주고 [S3] 동생에게 [N1] 6개를 주었더니 [N2] 15개가 남았습니다. 처음에 [S0] 유정이가 가지고 있던 [S1] 사탕은 몇 개입니까?",
+        "NET": "[N2] [N0] [OP] [N1] [OP]",
+        "template": "[N2] [N0] [OP_ADD] [N1] [OP_ADD]"
+    },
+    "3": {
+        "question": "감과 귤이 모두 합해서 129개 있습니다. 감이 귤보다 43개 더 적다면 감은 몇 개 있습니까?",
+        "equation_op": "129 43 [OP_SUB] 2 [OP_DIV]",
+        "qtype": "산술연산",
+        "checked": false,
+        "INC": {
+            "[N0]": "129",
+            "[N1]": "43"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "귤",
+            "[S1]": "감",
+            "[S2]": "개"
+        },
+        "IMQ": "감과 [S0] 귤이 모두 합해서 [N0] 129개 있습니다. [S1] 감이 귤보다 [N1] 43개 더 적다면 [S1] 감은 몇 [S2] 개 있습니까?",
+        "NET": "[N0] [N1] [OP] [C2] [OP]",
+        "template": "[N0] [N1] [OP_SUB] [C2] [OP_DIV]"
+    },
+    "4": {
+        "question": "색종이를 4명에게 똑같이 나누어 주어야 할 것을 잘못하여 5명에게 똑같이 나누어 주었더니 한 사람당 15장씩 주고 2장이 남았습니다. 이 색종이를 4명에게 똑같이 나누어 주면 한 사람당 최대한 몇 장씩 가지게 됩니까?",
+        "equation_op": "15 5 [OP_MUL] 2 [OP_ADD] 4 [OP_FDIV]",
+        "qtype": "산술연산",
+        "checked": false,
+        "INC": {
+            "[N0]": "4",
+            "[N1]": "5",
+            "[N2]": "15",
+            "[N3]": "2",
+            "[N4]": "4"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "색종이"
+        },
+        "IMQ": "[S0] 색종이를 [N0] 4명에게 똑같이 나누어 주어야 할 것을 잘못하여 [N1] 5명에게 똑같이 나누어 주었더니 한 사람당 [N2] 15장씩 주고 [N3] 2장이 남았습니다. 이 [S0] 색종이를 [N4] 4명에게 똑같이 나누어 주면 한 사람당 최대한 몇 장씩 가지게 됩니까?",
+        "NET": "[N2] [N1] [OP] [N3] [OP] [N0] [OP]",
+        "template": "[N2] [N1] [OP_MUL] [N3] [OP_ADD] [N0] [OP_FDIV]"
+    },
+    "5": {
+        "question": "윤기네 반 전체 학생 수는 32명입니다. 그중에서 남학생은 전체의 5/8입니다. 남학생 중에서 안경을 낀 학생은 남학생 전체의 3/4입니다. 윤기네 반에서 안경을 끼지 않은 남학생은 몇 명입니까?",
+        "equation_op": "32 32 5/8 [OP_MUL] 3/4 [OP_MUL] [OP_SUB]",
+        "qtype": "산술연산",
+        "checked": false,
+        "INC": {
+            "[N0]": "32",
+            "[N1]": "5/8",
+            "[N2]": "3/4"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "윤기",
+            "[S1]": "남학생"
+        },
+        "IMQ": "[S0] 윤기네 반 전체 학생 수는 [N0] 32명입니다. 그중에서 [S1] 남학생은 전체의 [N1] 5/8입니다. [S1] 남학생 중에서 안경을 낀 학생은 [S1] 남학생 전체의 [N2] 3/4입니다. [S0] 윤기네 반에서 안경을 끼지 않은 [S1] 남학생은 몇 명입니까?",
+        "NET": "[N0] [N0] [N1] [OP] [N2] [OP] [OP]",
+        "template": "[N0] [N0] [N1] [OP_MUL] [N2] [OP_MUL] [OP_SUB]"
+    },
+    "6": {
+        "question": "달리기 시합에서 정국이는 7등을 했고, 민영이는 5등을 했습니다. 태형이는 민영이보다 못했지만 정국이보다는 잘했습니다. 태형이는 몇 등입니까?",
+        "equation_op": "5 7 [OP_ADD] 2 [OP_FDIV]",
+        "qtype": "순서정하기",
+        "checked": false,
+        "INC": {
+            "[N0]": "7",
+            "[N1]": "5"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "달리기",
+            "[S1]": "시합",
+            "[S2]": "정국",
+            "[S3]": "민영",
+            "[S4]": "태형"
+        },
+        "IMQ": "[S0] 달리기 [S1] 시합에서 [S2] 정국이는 [N0] 7등을 했고, [S3] 민영이는 [N1] 5등을 했습니다. [S4] 태형이는 [S3] 민영이보다 못했지만 [S2] 정국이보다는 잘했습니다. [S4] 태형이는 몇 등입니까?",
+        "NET": "[N1] [N0] [OP] [C2] [OP]",
+        "template": "[N1] [N0] [OP_ADD] [C2] [OP_FDIV]"
+    },
+    "7": {
+        "question": "학교에서 국어, 수학, 영어, 과학, 사회의 순서로 시험을 봤습니다. 3번째로 시험을 본 과목은 무엇입니까?",
+        "equation_op": "[OP_LIST_SOL] 국어 수학 영어 과학 사회 [OP_LIST_EOL] 3 [OP_LIST_GET]",
+        "qtype": "순서정하기",
+        "checked": false,
+        "INC": {
+            "[N0]": "3"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "학교",
+            "[S1]": "국어",
+            "[S2]": "수학",
+            "[S3]": "영어",
+            "[S4]": "과학",
+            "[S5]": "사회"
+        },
+        "IMQ": "[S0] 학교에서 [S1] 국어, [S2] 수학, [S3] 영어, [S4] 과학, [S5] 사회의 순서로 시험을 봤습니다. [N0] 3번째로 시험을 본 과목은 무엇입니까?",
+        "NET": "[OP] [S1] [S2] [S3] [S4] [S5] [OP] [N0] [OP]",
+        "template": "[OP_LIST_SOL] [S1] [S2] [S3] [S4] [S5] [OP_LIST_EOL] [N0] [OP_LIST_GET]"
+    },
+    "8": {
+        "question": "학생들이 한 줄로 서 있습니다. 유정이는 맨 뒤에 서 있습니다. 은정이는 앞에서 5번째에 서 있습니다. 은정이와 유정이 사이에 8명이 서 있을 때, 줄을 서 있는 학생은 모두 몇 명입니까?",
+        "equation_op": "5 8 [OP_ADD] 1 [OP_ADD]",
+        "qtype": "순서정하기",
+        "checked": false,
+        "INC": {
+            "[N0]": "5",
+            "[N1]": "8"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "유정"
+        },
+        "IMQ": "학생들이 한 줄로 서 있습니다. [S0] 유정이는 맨 뒤에 서 있습니다. 은정이는 앞에서 [N0] 5번째에 서 있습니다. 은정이와 [S0] 유정이 사이에 [N1] 8명이 서 있을 때, 줄을 서 있는 학생은 모두 몇 명입니까?",
+        "NET": "[N0] [N1] [OP] [C1] [OP]",
+        "template": "[N0] [N1] [OP_ADD] [C1] [OP_ADD]"
+    },
+    "9": {
+        "question": "윤기는 왼쪽에서 7번째 열, 오른쪽에서 13번째 열, 앞에서 8번째 줄, 뒤에서 14번째 줄에 서서 체조를 하고 있습니다. 각 줄마다 서 있는 학생의 수가 같다고 할 때, 체조를 하고 있는 학생은 모두 몇 명입니까?",
+        "equation_op": "7 13 [OP_ADD] 1 [OP_SUB] 8 14 [OP_ADD] 1 [OP_SUB] [OP_MUL]",
+        "qtype": "순서정하기",
+        "checked": false,
+        "INC": {
+            "[N0]": "7",
+            "[N1]": "13",
+            "[N2]": "8",
+            "[N3]": "14"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "윤기"
+        },
+        "IMQ": "[S0] 윤기는 왼쪽에서 [N0] 7번째 열, 오른쪽에서 [N1] 13번째 열, 앞에서 [N2] 8번째 줄, 뒤에서 [N3] 14번째 줄에 서서 체조를 하고 있습니다. 각 줄마다 서 있는 학생의 수가 같다고 할 때, 체조를 하고 있는 학생은 모두 몇 명입니까?",
+        "NET": "[N0] [N1] [OP] [C1] [OP] [N2] [N3] [OP] [C1] [OP] [OP]",
+        "template": "[N0] [N1] [OP_ADD] [C1] [OP_SUB] [N2] [N3] [OP_ADD] [C1] [OP_SUB] [OP_MUL]"
+    },
+    "10": {
+        "question": "도서관에 똑같은 책장이 28개 있습니다. 각 책장은 6층이고, 각 층마다 꽂혀 있는 책의 수는 같습니다. 영어책은 어느 책장의 한 층의 왼쪽에서 9번째, 오른쪽에서 11번째에 꽂혀 있습니다. 도서관의 책장에 꽂혀 있는 책은 모두 몇 권입니까?",
+        "equation_op": "9 11 [OP_ADD] 1 [OP_SUB] 6 [OP_MUL] 28 [OP_MUL]",
+        "qtype": "순서정하기",
+        "checked": false,
+        "INC": {
+            "[N0]": "28",
+            "[N1]": "6",
+            "[N2]": "9",
+            "[N3]": "11"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "도서관",
+            "[S1]": "책장",
+            "[S2]": "영어"
+        },
+        "IMQ": "[S0] 도서관에 똑같은 [S1] 책장이 [N0] 28개 있습니다. 각 [S1] 책장은 [N1] 6층이고, 각 층마다 꽂혀 있는 책의 수는 같습니다. [S2] 영어책은 어느 [S1] 책장의 한 층의 왼쪽에서 [N2] 9번째, 오른쪽에서 [N3] 11번째에 꽂혀 있습니다. [S0] 도서관의 [S1] 책장에 꽂혀 있는 책은 모두 몇 권입니까?",
+        "NET": "[N2] [N3] [OP] [C1] [OP] [N1] [OP] [N0] [OP]",
+        "template": "[N2] [N3] [OP_ADD] [C1] [OP_SUB] [N1] [OP_MUL] [N0] [OP_MUL]"
+    },
+    "11": {
+        "question": "0, 2, 4, 6, 8 중 서로 다른 2개의 숫자를 뽑아서 두 자리 수를 만들려고 합니다. 만들 수 있는 두 자리 수는 모두 몇 개입니까?",
+        "equation_op": "[OP_LIST_SOL] 0 2 4 6 8 [OP_LIST_EOL] 2 [OP_LIST_GET_PERM] [OP_LIST_LEN]",
+        "qtype": "조합하기",
+        "checked": false,
+        "INC": {
+            "[N0]": "0",
+            "[N1]": "2",
+            "[N2]": "4",
+            "[N3]": "6",
+            "[N4]": "8",
+            "[N5]": "2"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "[N0] 0, [N1] 2, [N2] 4, [N3] 6, [N4] 8 중 서로 다른 [N5] 2개의 숫자를 뽑아서 두 자리 수를 만들려고 합니다. 만들 수 있는 두 자리 수는 모두 몇 개입니까?",
+        "NET": "[OP] [N0] [N1] [N2] [N3] [N4] [OP] [N1] [OP] [OP]",
+        "template": "[OP_LIST_SOL] [N0] [N1] [N2] [N3] [N4] [OP_LIST_EOL] [N1] [OP_LIST_GET_PERM] [OP_LIST_LEN]"
+    },
+    "12": {
+        "question": "4, 2, 1 중에서 서로 다른 숫자 2개를 뽑아 만들 수 있는 가장 큰 두 자리 수를 구하시오.",
+        "equation_op": "[OP_LIST_SOL] 4 2 1 [OP_LIST_EOL] 2 [OP_LIST_GET_PERM] 1 [OP_LIST_MAX]",
+        "qtype": "조합하기",
+        "checked": false,
+        "INC": {
+            "[N0]": "4",
+            "[N1]": "2",
+            "[N2]": "1",
+            "[N3]": "2"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "[N0] 4, [N1] 2, [N2] 1 중에서 서로 다른 숫자 [N3] 2개를 뽑아 만들 수 있는 가장 큰 두 자리 수를 구하시오.",
+        "NET": "[OP] [N0] [N1] [N2] [OP] [N1] [OP] [N2] [OP]",
+        "template": "[OP_LIST_SOL] [N0] [N1] [N2] [OP_LIST_EOL] [N1] [OP_LIST_GET_PERM] [N2] [OP_LIST_MAX]"
+    },
+    "13": {
+        "question": "8, 3, 2, 6 중에서 서로 다른 숫자 2개를 뽑아 만들 수 있는 두 자리 수 중에서 가장 큰 수와 가장 작은 수의 차를 구하시오.",
+        "equation_op": "[OP_LIST_SOL] 8 3 2 6 [OP_LIST_EOL] 2 [OP_LIST_GET_PERM] 1 [OP_LIST_MAX] 1 [OP_LIST_MIN] [OP_SUB]",
+        "qtype": "조합하기",
+        "checked": false,
+        "INC": {
+            "[N0]": "8",
+            "[N1]": "3",
+            "[N2]": "2",
+            "[N3]": "6",
+            "[N4]": "2"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "[N0] 8, [N1] 3, [N2] 2, [N3] 6 중에서 서로 다른 숫자 [N4] 2개를 뽑아 만들 수 있는 두 자리 수 중에서 가장 큰 수와 가장 작은 수의 차를 구하시오.",
+        "NET": "[OP] [N0] [N1] [N2] [N3] [OP] [N2] [OP] [C1] [OP] [C1] [OP] [OP]",
+        "template": "[OP_LIST_SOL] [N0] [N1] [N2] [N3] [OP_LIST_EOL] [N2] [OP_LIST_GET_PERM] [C1] [OP_LIST_MAX] [C1] [OP_LIST_MIN] [OP_SUB]"
+    },
+    "14": {
+        "question": "1부터 30까지 자연수를 쓰려고 합니다. 숫자 2는 모두 몇 번 써야 합니까?",
+        "equation_op": "1 30 1 [OP_LIST_ARANGE] [OP_LIST2NUM] [OP_NUM2LIST] 2 [OP_LIST_FIND_NUM]",
+        "qtype": "조합하기",
+        "checked": false,
+        "INC": {
+            "[N0]": "1",
+            "[N1]": "30",
+            "[N2]": "2"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "[N0] 1부터 [N1] 30까지 자연수를 쓰려고 합니다. 숫자 [N2] 2는 모두 몇 번 써야 합니까?",
+        "NET": "[N0] [N1] [N0] [OP] [OP] [OP] [N2] [OP]",
+        "template": "[N0] [N1] [N0] [OP_LIST_ARANGE] [OP_LIST2NUM] [OP_NUM2LIST] [N2] [OP_LIST_FIND_NUM]"
+    },
+    "15": {
+        "question": "10보다 작은 자연수 중에서 서로 다른 세 수를 동시에 뽑으려고 합니다. 세 수의 합이 12인 경우의 수를 구하시오.",
+        "equation_op": "1 9 1 [OP_LIST_ARANGE] 3 [OP_LIST_GET_PERM] [OP_LIST_NUM2SUM] 12 [OP_LIST_FIND_NUM]",
+        "qtype": "조합하기",
+        "checked": false,
+        "INC": {
+            "[N0]": "10",
+            "[N1]": "12"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "[N0] 10보다 작은 자연수 중에서 서로 다른 세 수를 동시에 뽑으려고 합니다. 세 수의 합이 [N1] 12인 경우의 수를 구하시오.",
+        "NET": "[C1] [C9] [C1] [OP] [C3] [OP] [OP] [N1] [OP]",
+        "template": "[C1] [C9] [C1] [OP_LIST_ARANGE] [C3] [OP_LIST_GET_PERM] [OP_LIST_NUM2SUM] [N1] [OP_LIST_FIND_NUM]"
+    },
+    "16": {
+        "question": "43, 92, 71, 64가 있습니다. 그중에서 가장 큰 수에서 가장 작은 수를 뺀 값은 얼마입니까?",
+        "equation_op": "[OP_LIST_SOL] 43 92 71 64 [OP_LIST_EOL] 1 [OP_LIST_MAX] 1 [OP_LIST_MIN] [OP_SUB]",
+        "qtype": "수찾기-1",
+        "checked": false,
+        "INC": {
+            "[N0]": "43",
+            "[N1]": "92",
+            "[N2]": "71",
+            "[N3]": "64"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "[N0] 43, [N1] 92, [N2] 71, [N3] 64가 있습니다. 그중에서 가장 큰 수에서 가장 작은 수를 뺀 값은 얼마입니까?",
+        "NET": "[OP] [N0] [N1] [N2] [N3] [OP] [C1] [OP] [C1] [OP] [OP]",
+        "template": "[OP_LIST_SOL] [N0] [N1] [N2] [N3] [OP_LIST_EOL] [C1] [OP_LIST_MAX] [C1] [OP_LIST_MIN] [OP_SUB]"
+    },
+    "17": {
+        "question": "어떤 소수의 소수점을 왼쪽으로 두 자리 옮기면 원래의 소수보다 1.782만큼 작아집니다. 원래의 소수를 구하시오.",
+        "equation_op": "1.782 1 0.01 [OP_SUB] [OP_DIV]",
+        "qtype": "수찾기-1",
+        "checked": false,
+        "INC": {
+            "[N0]": "1.782"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "어떤 소수의 소수점을 왼쪽으로 두 자리 옮기면 원래의 소수보다 [N0] 1.782만큼 작아집니다. 원래의 소수를 구하시오.",
+        "NET": "[N0] [C1] [C0.01] [OP] [OP]",
+        "template": "[N0] [C1] [C0.01] [OP_SUB] [OP_DIV]"
+    },
+    "18": {
+        "question": "0, 3, 5, 6 중에서 서로 다른 숫자 3개를 뽑아 만들 수 있는 세 자리 수 중에서 가장 작은 수를 쓰시오",
+        "equation_op": "[OP_LIST_SOL] 0 3 5 6 [OP_LIST_EOL] 3 [OP_LIST_GET_PERM] 1 [OP_LIST_MIN]",
+        "qtype": "수찾기-1",
+        "checked": false,
+        "INC": {
+            "[N0]": "0",
+            "[N1]": "3",
+            "[N2]": "5",
+            "[N3]": "6",
+            "[N4]": "3"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "[N0] 0, [N1] 3, [N2] 5, [N3] 6 중에서 서로 다른 숫자 [N4] 3개를 뽑아 만들 수 있는 세 자리 수 중에서 가장 작은 수를 쓰시오",
+        "NET": "[OP] [N0] [N1] [N2] [N3] [OP] [N1] [OP] [C1] [OP]",
+        "template": "[OP_LIST_SOL] [N0] [N1] [N2] [N3] [OP_LIST_EOL] [N1] [OP_LIST_GET_PERM] [C1] [OP_LIST_MIN]"
+    },
+    "19": {
+        "question": "5개의 수 1.4, 9/10, 1, 0.5, 13/10이 있습니다. 이 중에서 1보다 큰 수는 모두 몇 개입니까?",
+        "equation_op": "[OP_LIST_SOL] 1.4 9/10 1 0.5 13/10 [OP_LIST_EOL] 1 [OP_LIST_MORE] [OP_LIST_LEN]",
+        "qtype": "수찾기-1",
+        "checked": false,
+        "INC": {
+            "[N0]": "5",
+            "[N1]": "1.4",
+            "[N2]": "9/10",
+            "[N3]": "1",
+            "[N4]": "0.5",
+            "[N5]": "13/10",
+            "[N6]": "1"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "[N0] 5개의 수 [N1] 1.4, [N2] 9/10, [N3] 1, [N4] 0.5, [N5] 13/10이 있습니다. 이 중에서 [N6] 1보다 큰 수는 모두 몇 개입니까?",
+        "NET": "[OP] [N1] [N2] [N3] [N4] [N5] [OP] [N3] [OP] [OP]",
+        "template": "[OP_LIST_SOL] [N1] [N2] [N3] [N4] [N5] [OP_LIST_EOL] [N3] [OP_LIST_MORE] [OP_LIST_LEN]"
+    },
+    "20": {
+        "question": "유나가 책을 펼쳤는데 두 쪽수의 합이 125이었습니다. 유나가 펼친 두 쪽수 중 큰 수를 쓰시오.",
+        "equation_op": "125 1 [OP_SUB] 2 [OP_DIV] 1 [OP_ADD]",
+        "qtype": "수찾기-1",
+        "checked": false,
+        "INC": {
+            "[N0]": "125"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "유나"
+        },
+        "IMQ": "[S0] 유나가 책을 펼쳤는데 두 쪽수의 합이 [N0] 125이었습니다. [S0] 유나가 펼친 두 쪽수 중 큰 수를 쓰시오.",
+        "NET": "[N0] [C1] [OP] [C2] [OP] [C1] [OP]",
+        "template": "[N0] [C1] [OP_SUB] [C2] [OP_DIV] [C1] [OP_ADD]"
+    },
+    "21": {
+        "question": "서로 다른 네 수 A, B, C, D가 있습니다. 세 자리 수끼리의 덧셈식 7A4+B6C=D29에서 D를 구하시오.",
+        "equation_op": "7A4+B6C=D29 D [OP_DIGIT_UNK_SOLVER]",
+        "qtype": "수찾기-2",
+        "checked": false,
+        "INC": {},
+        "IXC": {
+            "[X0]": "A",
+            "[X1]": "B",
+            "[X2]": "C",
+            "[X3]": "D"
+        },
+        "IEC": {
+            "[E0]": "7A4+B6C=D29"
+        },
+        "ISC": {},
+        "IMQ": "서로 다른 네 수 [X0] A, [X1] B, [X2] C, [X3] D가 있습니다. 세 자리 수끼리의 덧셈식 [E0] 7A4+B6C=D29에서 [X3] D를 구하시오.",
+        "NET": "[E0] [X3] [OP]",
+        "template": "[E0] [X3] [OP_DIGIT_UNK_SOLVER]"
+    },
+    "22": {
+        "question": "A, B는 한 자리 수입니다. A는 2보다 4 큰 수이고, B보다 3 작은 수는 1입니다. A와 B의 합을 구하시오.",
+        "equation_op": "2 4 [OP_ADD] 1 3 [OP_ADD] [OP_ADD]",
+        "qtype": "수찾기-2",
+        "checked": false,
+        "INC": {
+            "[N0]": "2",
+            "[N1]": "4",
+            "[N2]": "3",
+            "[N3]": "1"
+        },
+        "IXC": {
+            "[X0]": "A",
+            "[X1]": "B"
+        },
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "[X0] A, [X1] B는 한 자리 수입니다. [X0] A는 [N0] 2보다 [N1] 4 큰 수이고, [X1] B보다 [N2] 3 작은 수는 [N3] 1입니다. [X0] A와 [X1] B의 합을 구하시오.",
+        "NET": "[N0] [N1] [OP] [N3] [N2] [OP] [OP]",
+        "template": "[N0] [N1] [OP_ADD] [N3] [N2] [OP_ADD] [OP_ADD]"
+    },
+    "23": {
+        "question": "서로 다른 두 수 A, B가 있습니다. 두 자리 수끼리의 뺄셈식 8A-B2=45에서 A와 B의 합을 구하시오.",
+        "equation_op": "8A-B2=45 A [OP_DIGIT_UNK_SOLVER] 8A-B2=45 B [OP_DIGIT_UNK_SOLVER] [OP_ADD]",
+        "qtype": "수찾기-2",
+        "checked": false,
+        "INC": {},
+        "IXC": {
+            "[X0]": "A",
+            "[X1]": "B"
+        },
+        "IEC": {
+            "[E0]": "8A-B2=45"
+        },
+        "ISC": {},
+        "IMQ": "서로 다른 두 수 [X0] A, [X1] B가 있습니다. 두 자리 수끼리의 뺄셈식 [E0] 8A-B2=45에서 [X0] A와 [X1] B의 합을 구하시오.",
+        "NET": "[E0] [X0] [OP] [E0] [X1] [OP] [OP]",
+        "template": "[E0] [X0] [OP_DIGIT_UNK_SOLVER] [E0] [X1] [OP_DIGIT_UNK_SOLVER] [OP_ADD]"
+    },
+    "24": {
+        "question": "서로 다른 두 자연수 A, B가 있습니다. A를 17로 나누면 몫은 25이고 나머지는 B가 됩니다. 나머지 B가 가장 큰 수일 때 A를 구하시오.",
+        "equation_op": "25 17 [OP_MUL] 17 1 [OP_SUB] [OP_ADD]",
+        "qtype": "수찾기-2",
+        "checked": false,
+        "INC": {
+            "[N0]": "17",
+            "[N1]": "25"
+        },
+        "IXC": {
+            "[X0]": "A",
+            "[X1]": "B"
+        },
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "서로 다른 두 자연수 [X0] A, [X1] B가 있습니다. [X0] A를 [N0] 17로 나누면 몫은 [N1] 25이고 나머지는 [X1] B가 됩니다. 나머지 [X1] B가 가장 큰 수일 때 [X0] A를 구하시오.",
+        "NET": "[N1] [N0] [OP] [N0] [C1] [OP] [OP]",
+        "template": "[N1] [N0] [OP_MUL] [N0] [C1] [OP_SUB] [OP_ADD]"
+    },
+    "25": {
+        "question": "네 자리 수 6A42를 백의 자리에서 반올림하면 6000이 됩니다. 0부터 9까지의 숫자 중 A에 쓸 수 있는 숫자는 모두 몇 개입니까?",
+        "equation_op": "9999",
+        "qtype": "수찾기-2",
+        "checked": false,
+        "INC": {
+            "[N0]": "6",
+            "[N1]": "6000",
+            "[N2]": "0",
+            "[N3]": "9"
+        },
+        "IXC": {
+            "[X0]": "A"
+        },
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "네 자리 수 [N0] 6A42를 백의 자리에서 반올림하면 [N1] 6000이 됩니다. [N2] 0부터 [N3] 9까지의 숫자 중 [X0] A에 쓸 수 있는 숫자는 모두 몇 개입니까?",
+        "NET": "[C9999]",
+        "template": "[C9999]"
+    },
+    "26": {
+        "question": "어떤 수에서 46을 빼야 하는데 잘못하여 59를 뺐더니 43이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "equation_op": "43 59 [OP_ADD] 46 [OP_SUB]",
+        "qtype": "수찾기-3",
+        "checked": false,
+        "INC": {
+            "[N0]": "46",
+            "[N1]": "59",
+            "[N2]": "43"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "어떤 수에서 [N0] 46을 빼야 하는데 잘못하여 [N1] 59를 뺐더니 [N2] 43이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "NET": "[N2] [N1] [OP] [N0] [OP]",
+        "template": "[N2] [N1] [OP_ADD] [N0] [OP_SUB]"
+    },
+    "27": {
+        "question": "어떤 수에서 7을 뺐더니 2가 되었습니다. 어떤 수를 구하시오.",
+        "equation_op": "2 7 [OP_ADD]",
+        "qtype": "수찾기-3",
+        "checked": false,
+        "INC": {
+            "[N0]": "7",
+            "[N1]": "2"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "어떤 수에서 [N0] 7을 뺐더니 [N1] 2가 되었습니다. 어떤 수를 구하시오.",
+        "NET": "[N1] [N0] [OP]",
+        "template": "[N1] [N0] [OP_ADD]"
+    },
+    "28": {
+        "question": "12에 어떤 수를 곱해야 하는데 잘못하여 어떤 수를 12로 나누었더니 8이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "equation_op": "8 12 [OP_MUL] 12 [OP_MUL]",
+        "qtype": "수찾기-3",
+        "checked": false,
+        "INC": {
+            "[N0]": "12",
+            "[N1]": "12",
+            "[N2]": "8"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "[N0] 12에 어떤 수를 곱해야 하는데 잘못하여 어떤 수를 [N1] 12로 나누었더니 [N2] 8이 되었습니다. 바르게 계산한 결과를 구하시오.",
+        "NET": "[N2] [N0] [OP] [N0] [OP]",
+        "template": "[N2] [N0] [OP_MUL] [N0] [OP_MUL]"
+    },
+    "29": {
+        "question": "두 자리 수끼리의 곱셈에서 곱하는 수의 십의 자리 숫자 2를 6으로 잘못 보고 계산한 값이 2432가 되었습니다. 바르게 계산한 값이 912일 때, 2개의 두 자리 수 중 더 작은 수를 쓰시오.",
+        "equation_op": "[OP_LIST_SOL] 2432 912 [OP_SUB] 40 [OP_DIV] 912 2432 912 [OP_SUB] 40 [OP_DIV] [OP_DIV] [OP_LIST_EOL] 1 [OP_LIST_MIN]",
+        "qtype": "수찾기-3",
+        "checked": false,
+        "INC": {
+            "[N0]": "2",
+            "[N1]": "6",
+            "[N2]": "2432",
+            "[N3]": "912",
+            "[N4]": "2"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "두 자리 수끼리의 곱셈에서 곱하는 수의 십의 자리 숫자 [N0] 2를 [N1] 6으로 잘못 보고 계산한 값이 [N2] 2432가 되었습니다. 바르게 계산한 값이 [N3] 912일 때, [N4] 2개의 두 자리 수 중 더 작은 수를 쓰시오.",
+        "NET": "[OP] [N2] [N3] [OP] [C40] [OP] [N3] [N2] [N3] [OP] [C40] [OP] [OP] [OP] [C1] [OP]",
+        "template": "[OP_LIST_SOL] [N2] [N3] [OP_SUB] [C40] [OP_DIV] [N3] [N2] [N3] [OP_SUB] [C40] [OP_DIV] [OP_DIV] [OP_LIST_EOL] [C1] [OP_LIST_MIN]"
+    },
+    "30": {
+        "question": "어떤 수에 14를 더한 후 14를 곱하고, 24를 뺀 값을 24로 나누면 13이 됩니다. 어떤 수를 구하시오.",
+        "equation_op": "13 24 [OP_MUL] 24 [OP_ADD] 14 [OP_DIV] 14 [OP_SUB]",
+        "qtype": "수찾기-3",
+        "checked": false,
+        "INC": {
+            "[N0]": "14",
+            "[N1]": "14",
+            "[N2]": "24",
+            "[N3]": "24",
+            "[N4]": "13"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "어떤 수에 [N0] 14를 더한 후 [N1] 14를 곱하고, [N2] 24를 뺀 값을 [N3] 24로 나누면 [N4] 13이 됩니다. 어떤 수를 구하시오.",
+        "NET": "[N4] [N2] [OP] [N2] [OP] [N0] [OP] [N0] [OP]",
+        "template": "[N4] [N2] [OP_MUL] [N2] [OP_ADD] [N0] [OP_DIV] [N0] [OP_SUB]"
+    },
+    "31": {
+        "question": "석진이는 호석이보다 무겁고 지민이보다 가볍습니다. 남준이는 지민이보다 무겁습니다. 4명 중 가장 가벼운 사람은 누구입니까?",
+        "equation_op": "[OP_LIST_SOL] 석진 호석 지민 남준 [OP_LIST_EOL] [OP_LIST_SOL] 석진 호석 > 석진 지민 < 남준 지민 > [OP_LIST_EOL] [OP_LIST_COND_MAX_MIN] 2 [OP_LIST_GET]",
+        "qtype": "크기비교",
+        "checked": false,
+        "INC": {
+            "[N0]": "4"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "석진",
+            "[S1]": "호석",
+            "[S2]": "지민",
+            "[S3]": "남준"
+        },
+        "IMQ": "[S0] 석진이는 [S1] 호석이보다 무겁고 [S2] 지민이보다 가볍습니다. [S3] 남준이는 [S2] 지민이보다 무겁습니다. [N0] 4명 중 가장 가벼운 사람은 누구입니까?",
+        "NET": "[OP] [S0] [S1] [S2] [S3] [OP] [OP] [S0] [S1] [C>] [S0] [S2] [C<] [S3] [S2] [C>] [OP] [OP] [C2] [OP]",
+        "template": "[OP_LIST_SOL] [S0] [S1] [S2] [S3] [OP_LIST_EOL] [OP_LIST_SOL] [S0] [S1] [C>] [S0] [S2] [C<] [S3] [S2] [C>] [OP_LIST_EOL] [OP_LIST_COND_MAX_MIN] [C2] [OP_LIST_GET]"
+    },
+    "32": {
+        "question": "정국이는 지우개를 6개 가지고 있습니다. 지민이는 지우개를 정국이보다 4개 더 많이 가지고 있고 석진이는 지민이보다 3개 더 적게 가지고 있습니다. 지우개를 가장 적게 가지고 있는 사람은 누구입니까?",
+        "equation_op": "[OP_LIST_SOL] 정국 지민 석진 [OP_LIST_EOL] [OP_LIST_SOL] 6 6 4 [OP_ADD] 6 4 [OP_ADD] 3 [OP_SUB] [OP_LIST_EOL] 1 [OP_LIST_MIN] [OP_LIST_INDEX] [OP_LIST_POP] [OP_LIST_GET]",
+        "qtype": "크기비교",
+        "checked": false,
+        "INC": {
+            "[N0]": "6",
+            "[N1]": "4",
+            "[N2]": "3"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "정국",
+            "[S1]": "지우개",
+            "[S2]": "지민",
+            "[S3]": "석진"
+        },
+        "IMQ": "[S0] 정국이는 [S1] 지우개를 [N0] 6개 가지고 있습니다. [S2] 지민이는 [S1] 지우개를 [S0] 정국이보다 [N1] 4개 더 많이 가지고 있고 [S3] 석진이는 [S2] 지민이보다 [N2] 3개 더 적게 가지고 있습니다. [S1] 지우개를 가장 적게 가지고 있는 사람은 누구입니까?",
+        "NET": "[OP] [S0] [S2] [S3] [OP] [OP] [N0] [N0] [N1] [OP] [N0] [N1] [OP] [N2] [OP] [OP] [C1] [OP] [OP] [OP] [OP]",
+        "template": "[OP_LIST_SOL] [S0] [S2] [S3] [OP_LIST_EOL] [OP_LIST_SOL] [N0] [N0] [N1] [OP_ADD] [N0] [N1] [OP_ADD] [N2] [OP_SUB] [OP_LIST_EOL] [C1] [OP_LIST_MIN] [OP_LIST_INDEX] [OP_LIST_POP] [OP_LIST_GET]"
+    },
+    "33": {
+        "question": "네 수 A, B, C, D가 있습니다. A는 27입니다. B는 A보다 7 큰 수입니다. C는 B보다 9 작은 수입니다. D는 C의 2배인 수입니다. 가장 큰 수는 어느 것입니까?",
+        "equation_op": "[OP_LIST_SOL] A B C D [OP_LIST_EOL] [OP_LIST_SOL] 27 27 7 [OP_ADD] 27 7 [OP_ADD] 9 [OP_SUB] 27 7 [OP_ADD] 9 [OP_SUB] 2 [OP_MUL] [OP_LIST_EOL] 1 [OP_LIST_MAX] [OP_LIST_INDEX] [OP_LIST_POP] [OP_LIST_GET]",
+        "qtype": "크기비교",
+        "checked": false,
+        "INC": {
+            "[N0]": "27",
+            "[N1]": "7",
+            "[N2]": "9",
+            "[N3]": "2"
+        },
+        "IXC": {
+            "[X0]": "A",
+            "[X1]": "B",
+            "[X2]": "C",
+            "[X3]": "D"
+        },
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "네 수 [X0] A, [X1] B, [X2] C, [X3] D가 있습니다. [X0] A는 [N0] 27입니다. [X1] B는 [X0] A보다 [N1] 7 큰 수입니다. [X2] C는 [X1] B보다 [N2] 9 작은 수입니다. [X3] D는 [X2] C의 [N3] 2배인 수입니다. 가장 큰 수는 어느 것입니까?",
+        "NET": "[OP] [X0] [X1] [X2] [X3] [OP] [OP] [N0] [N0] [N1] [OP] [N0] [N1] [OP] [N2] [OP] [N0] [N1] [OP] [N2] [OP] [N3] [OP] [OP] [C1] [OP] [OP] [OP] [OP]",
+        "template": "[OP_LIST_SOL] [X0] [X1] [X2] [X3] [OP_LIST_EOL] [OP_LIST_SOL] [N0] [N0] [N1] [OP_ADD] [N0] [N1] [OP_ADD] [N2] [OP_SUB] [N0] [N1] [OP_ADD] [N2] [OP_SUB] [N3] [OP_MUL] [OP_LIST_EOL] [C1] [OP_LIST_MAX] [OP_LIST_INDEX] [OP_LIST_POP] [OP_LIST_GET]"
+    },
+    "34": {
+        "question": "지민이는 주스를 0.7l 마셨습니다. 은지는 지민이보다 1/10l 더 적게 마셨습니다. 윤기는 4/5l 마셨고, 유나는 지민이보다 0.2l 더 많이 마셨습니다. 주스를 가장 많이 마신 사람은 누구입니까?",
+        "equation_op": "[OP_LIST_SOL] 지민 은지 윤기 유나 [OP_LIST_EOL] [OP_LIST_SOL] 0.7 0.7 1/10 [OP_SUB] 4/5 0.7 0.2 [OP_ADD] [OP_LIST_EOL] 1 [OP_LIST_MAX] [OP_LIST_INDEX] [OP_LIST_POP] [OP_LIST_GET]",
+        "qtype": "크기비교",
+        "checked": false,
+        "INC": {
+            "[N0]": "0.7",
+            "[N1]": "1/10",
+            "[N2]": "4/5",
+            "[N3]": "0.2"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "지민",
+            "[S1]": "주스",
+            "[S2]": "은지",
+            "[S3]": "윤기",
+            "[S4]": "유나"
+        },
+        "IMQ": "[S0] 지민이는 [S1] 주스를 [N0] 0.7l 마셨습니다. [S2] 은지는 [S0] 지민이보다 [N1] 1/10l 더 적게 마셨습니다. [S3] 윤기는 [N2] 4/5l 마셨고, [S4] 유나는 [S0] 지민이보다 [N3] 0.2l 더 많이 마셨습니다. [S1] 주스를 가장 많이 마신 사람은 누구입니까?",
+        "NET": "[OP] [S0] [S2] [S3] [S4] [OP] [OP] [N0] [N0] [N1] [OP] [N2] [N0] [N3] [OP] [OP] [C1] [OP] [OP] [OP] [OP]",
+        "template": "[OP_LIST_SOL] [S0] [S2] [S3] [S4] [OP_LIST_EOL] [OP_LIST_SOL] [N0] [N0] [N1] [OP_SUB] [N2] [N0] [N3] [OP_ADD] [OP_LIST_EOL] [C1] [OP_LIST_MAX] [OP_LIST_INDEX] [OP_LIST_POP] [OP_LIST_GET]"
+    },
+    "35": {
+        "question": "철수, 영수, 영철, 경수, 경환 5명이 있습니다. 철수는 나이가 가장 적습니다. 영수는 경수에게는 동생이고 경환에게는 형입니다. 경수는 2년 후에 40살이 되고, 영철이는 올해 40살입니다. 5명 중에서 나이가 2번째로 적은 사람은 누구입니까?",
+        "equation_op": "9999",
+        "qtype": "크기비교",
+        "checked": false,
+        "INC": {
+            "[N0]": "5",
+            "[N1]": "2",
+            "[N2]": "40",
+            "[N3]": "40",
+            "[N4]": "5",
+            "[N5]": "2"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {
+            "[S0]": "경수",
+            "[S1]": "경환",
+            "[S2]": "나",
+            "[S3]": "동생"
+        },
+        "IMQ": "철수, 영수, 영철, [S0] 경수, [S1] 경환 [N0] 5명이 있습니다. 철수는 [S2] 나이가 가장 적습니다. 영수는 [S0] 경수에게는 [S3] 동생이고 [S1] 경환에게는 형입니다. [S0] 경수는 [N1] 2년 후에 [N2] 40살이 되고, 영철이는 올해 [N3] 40살입니다. [N4] 5명 중에서 [S2] 나이가 [N5] 2번째로 적은 사람은 누구입니까?",
+        "NET": "[C9999]",
+        "template": "[C9999]"
+    },
+    "36": {
+        "question": "삼각형의 변의 개수와 사각형의 변의 개수의 합을 구하시오",
+        "equation_op": "3 4 [OP_ADD]",
+        "qtype": "도형",
+        "checked": false,
+        "INC": {},
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "삼각형의 변의 개수와 사각형의 변의 개수의 합을 구하시오",
+        "NET": "[C3] [C4] [OP]",
+        "template": "[C3] [C4] [OP_ADD]"
+    },
+    "37": {
+        "question": "한 변의 길이가 5cm인 정삼각형의 둘레는 몇 cm입니까?",
+        "equation_op": "5 3 [OP_MUL]",
+        "qtype": "도형",
+        "checked": false,
+        "INC": {
+            "[N0]": "5"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "한 변의 길이가 [N0] 5cm인 정삼각형의 둘레는 몇 cm입니까?",
+        "NET": "[N0] [C3] [OP]",
+        "template": "[N0] [C3] [OP_MUL]"
+    },
+    "38": {
+        "question": "길이가 20㎝인 철사로 직사각형을 만들었더니 철사가 남지도 모자라지도 않았습니다. 직사각형의 가로 길이가 4cm일 때, 세로 길이는 몇 cm입니까?",
+        "equation_op": "20 2 [OP_DIV] 4 [OP_SUB]",
+        "qtype": "도형",
+        "checked": false,
+        "INC": {
+            "[N0]": "20",
+            "[N1]": "4"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "길이가 [N0] 20㎝인 철사로 직사각형을 만들었더니 철사가 남지도 모자라지도 않았습니다. 직사각형의 가로 길이가 [N1] 4cm일 때, 세로 길이는 몇 cm입니까?",
+        "NET": "[N0] [C2] [OP] [N1] [OP]",
+        "template": "[N0] [C2] [OP_DIV] [N1] [OP_SUB]"
+    },
+    "39": {
+        "question": "한 변의 길이가 10cm인 정사각형과 둘레가 같은 정팔각형이 있습니다. 이 정팔각형의 한 변의 길이는 몇 cm입니까?",
+        "equation_op": "10 4 [OP_MUL] 8 [OP_DIV]",
+        "qtype": "도형",
+        "checked": false,
+        "INC": {
+            "[N0]": "10"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "한 변의 길이가 [N0] 10cm인 정사각형과 둘레가 같은 정팔각형이 있습니다. 이 정팔각형의 한 변의 길이는 몇 cm입니까?",
+        "NET": "[N0] [C4] [OP] [C8] [OP]",
+        "template": "[N0] [C4] [OP_MUL] [C8] [OP_DIV]"
+    },
+    "40": {
+        "question": "둘레가 24cm인 직사각형이 있습니다. 이 직사각형의 가로 길이가 세로 길이의 2배일 때 가로는 몇 cm입니까?",
+        "equation_op": "24 2 [OP_DIV] 3 [OP_DIV] 2 [OP_MUL]",
+        "qtype": "도형",
+        "checked": false,
+        "INC": {
+            "[N0]": "24",
+            "[N1]": "2"
+        },
+        "IXC": {},
+        "IEC": {},
+        "ISC": {},
+        "IMQ": "둘레가 [N0] 24cm인 직사각형이 있습니다. 이 직사각형의 가로 길이가 세로 길이의 [N1] 2배일 때 가로는 몇 cm입니까?",
+        "NET": "[N0] [N1] [OP] [C3] [OP] [N1] [OP]",
+        "template": "[N0] [N1] [OP_DIV] [C3] [OP_DIV] [N1] [OP_MUL]"
+    }
+}

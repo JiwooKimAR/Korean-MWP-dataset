@@ -31,6 +31,10 @@
         "template": "[OP_LIST_SOL] [X0] [X1] [OP_LIST_EOL] [OP_LIST_SOL] [N0] [N1] [C1000] [OP_DIV] [C60] [OP_MUL] [OP_LIST_EOL] [C1] [OP_LIST_MAX] [OP_LIST_INDEX] [OP_LIST_POP] [OP_LIST_GET]"
     }
 ```
+밑의 표는 데이터의 개수를 나타냅니다.
+| # of train data | # of validation data | # of test_A data | # of test_B data | total |
+| --------------- | -------------------- | ---------------- | ---------------- | ----- |
+| 23057 | 1214 | 40 | 1214 | 25525 |
 
 ## 모델
 본 데이터셋을 활용한 모델은 다음 링크에서 보실 수 있습니다.  

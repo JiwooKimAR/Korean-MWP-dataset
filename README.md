@@ -33,3 +33,5 @@
 ```
 
 ## 모델
+본 데이터셋을 활용한 모델은 다음 링크에서 보실 수 있습니다.  
+[기학습된 언어 모델을 활용한 한글 수학 서술형 문제 풀이 모델](https://github.com/JiwooKimAR/MWP-solver-with-pretrained-language-model)
